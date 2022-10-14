@@ -27,3 +27,8 @@ export default {
 // variations
 export const Default: StoryObj<TextInputRootProps> = {}
 
+export const withOutIcon: StoryObj<TextInputRootProps> = {
+    args: {
+        children: <TextInput.Input placeholder='Type your email address' />
+    }
+}
