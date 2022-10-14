@@ -25,3 +25,13 @@ export const Large: StoryObj<TextProps> = {
         size: 'lg'
     }
 }
+
+// Comp = radix
+export const CustomComponent: StoryObj<TextProps> = {
+    args: {
+        asChild: true,
+        children: (
+            <p>Testando</p>
+        )
+    }
+}
