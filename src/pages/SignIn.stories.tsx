@@ -1,5 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react'
 import { SignIn } from './SignIn'
+import { Meta, StoryObj } from '@storybook/react'
+import { within, userEvent, waitFor } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
+
 
 // global
 export default {
@@ -10,5 +13,22 @@ export default {
 } as Meta
 
 
-// variations
-export const Default: StoryObj = {}
+export const Default: StoryObj = {
+    // play -> run tests
+    // canvasElement -> where the element is in storybook
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement)
+
+        // useEvent -> to type anything in the form
+        userEvent.type(canvas.getByPlaceholderText('Type Your Email'), 'marina@test.com')
+        userEvent.type(canvas.getByPlaceholderText('*************'), '12345678')
+
+        userEvent.click(canvas.getByRole('button'))
+
+        await waitFor(() => {
+            return expect(canvas.getByText('Success Login!'))
+        })
+
+
+    }
+}
