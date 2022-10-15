@@ -6,7 +6,7 @@ export default {
     title: 'Components/Text',
     component: Text,
     args: {
-        children: 'Hello Again'
+        children: 'Text'
     },
     argTypes: {
         size: {
