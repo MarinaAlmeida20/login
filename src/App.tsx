@@ -52,6 +52,15 @@ export function App() {
           Login
         </Button>
       </form>
+
+      <footer className='flex flex-col items-center gap-4 mt-8'>
+        <Text asChild size='sm'>
+          <a href='' className='text-gray-400 underline hover:text-gray-200'>Forgot your password?</a>
+        </Text>
+        <Text asChild size='sm'>
+          <a href='' className='text-gray-400 underline hover:text-gray-200'>Don't have account?Create an account</a>
+        </Text>
+      </footer>
     </div>
   )
 }
