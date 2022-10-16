@@ -31,7 +31,7 @@ npm run dev
 ## ✨ Demo
 
 <p align="center">
-  <img width="700" align="center" src="" alt="demo"/>
+  <img width="700" align="center" src="https://github.com/MarinaAlmeida20/login/blob/main/src/assets/Screenshot%20from%202022-10-16%2017-43-52.png?raw=true" alt="demo"/>
 </p>
 
 ## Author
