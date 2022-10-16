@@ -25,8 +25,9 @@ npm run dev
 
 ## App link
 
-    ### Storybook deployed:
-        - [Login Storybook](https://marinaalmeida20.github.io/login/?path=/story/components-text--large)
+### Storybook deployed:
+
+- [Login Storybook](https://marinaalmeida20.github.io/login/?path=/story/components-text--large)
 
 ## ✨ Demo
 
